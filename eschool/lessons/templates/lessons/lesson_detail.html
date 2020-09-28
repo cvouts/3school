@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div id="wrapper1">
+  <h1>Course: {{ lesson.name }}</h1>
+
+  <p>ID: {{lesson.id}}</p>
+  <p><strong>Teacher:</strong> <a href="">{{ lesson.teacher }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Summary:</strong> {{ book.summary }}</p>
+</div>
+{% endblock %}

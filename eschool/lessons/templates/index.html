@@ -1,0 +1,35 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% load static %}
+    <div id="header-wrapper" style="background: url({% static 'images/header.jpg' %}) no-repeat center;">
+        <div id="header" class="container">
+        <!--     <div id="menu">
+        <ul>
+        <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+        <li><a href="#" accesskey="2" title="">About</a></li>
+        <li><a href="#" accesskey="3" title="">Contact Us</a></li>
+        </ul>
+        </div>
+        -->         <div id="logo">
+        <h1>3 s c h o o l</h1>
+        </div>
+        </div>
+    </div>
+    <div id="wrapper1">
+        <div id="featured" class="container">
+             <div class="box1">
+                    <h2>3school</h2>
+                    <p>
+                        Welcome to 3School, a website developed by <em>Christos Voutsadakis</em>! <br />
+                    </p>
+                </div>
+                <div class="box2">
+                    <h2>Dynamic content</h2>
+                    <p>
+                        Number of courses being taught: {{ num_lessons }}
+                    </p>
+                </div>
+        </div>
+    </div>
+{% endblock %}
